@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Sanctuary</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background Image */
+        body {
+            background: url('https://raw.githubusercontent.com/mikomike22/web-desing-assinment/2495bd5b4890490792166d14a06c9d7fabd906cb/wild%20life%20all.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: rgba(85, 85, 85, 0.8);
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(51, 51, 51, 0.9);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(85, 85, 85, 0.9);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Logo Styles */
+        .logo {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 500;
+        }
+
+        /* Main Content */
+        .main-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 120px auto 40px;
+            max-width: 1200px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo {
+                width: 150px;
+                height: 150px;
+                top: 10px;
+                left: 10px;
+            }
+            
+            .main-content {
+                margin-top: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="https://raw.githubusercontent.com/mikomike22/web-desing-assinment/7a7fa34d44f304a892fb9016c4118eeafb6d31a6/logoo.jpeg" alt="Wildlife Sanctuary Logo" class="logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="get-involved.html">Get Involved</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Animals</a>
+            <div class="dropdown-content">
+                <a href="lion.html">Lion</a>
+                <a href="warthog.html">Warthog</a>
+                <a href="elephant.html">Elephant</a>
+                <a href="dikdik.html">Dik-dik</a>
+                <a href="cheetah.html">Cheetah</a>
+                <a href="hyena.html">Hyena</a>
+                <a href="fox.html">Fox</a>
+                <a href="white-belly-bird.html">White Belly Bird</a>
+                <a href="jackal.html">Jackal</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>Welcome to Wildlife Sanctuary</h1>
+        <p>Protecting Nature, Preserving Life</p>
+        
+        <div class="description">
+            <p>In the vast savanna, the golden grasses sway as a lion prowls silently, its amber eyes fixed on a herd of wildebeest. A young elephant trumpets in the distance, guiding its family to the watering hole. Overhead, vultures circle, waiting for nature's inevitable rhythm to unfold.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>Michael Muchemi</p>
+            <p>24/0186@gmail.com</p>
+            <p>0793832286</p>
+            <p>Website Designer</p>
+        </div>
+        <p>&copy; 2024 Wildlife Sanctuary. All rights reserved by Michael Muchemi, a KCA University student</p>
+    </footer>
+</body>
+</html>
